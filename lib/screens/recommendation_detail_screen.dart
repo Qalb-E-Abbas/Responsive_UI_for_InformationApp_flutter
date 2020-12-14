@@ -11,7 +11,8 @@ class RecommendationDetailScreen extends StatelessWidget {
         children: <Widget>[
           SingleChildScrollView(
             child: Container(
-              padding: EdgeInsets.only(bottom: ScreenUtil().setHeight(137)),
+              margin: EdgeInsets.only(top: 30),
+              padding: EdgeInsets.only(bottom: ScreenUtil().setHeight(120)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
@@ -20,11 +21,13 @@ class RecommendationDetailScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(20),
+                        topRight: Radius.circular(60),
+                        topLeft: Radius.circular(60)
                       ),
                       child: Image.asset(
-                        'assets/images/detail1.png',
+                        'assets/images/instar1.jpg',
                         width: ScreenUtil().setWidth(390),
-                        height: ScreenUtil().setHeight(412),
+                        height: ScreenUtil().setHeight(650),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -42,7 +45,7 @@ class RecommendationDetailScreen extends StatelessWidget {
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                                text: 'Malena Veronica, 23',
+                                text: 'Qalb E Abbas, 22',
                                 style: TextStyle(
                                   fontSize: ScreenUtil().setSp(24),
                                   fontWeight: FontWeight.bold,
@@ -55,7 +58,7 @@ class RecommendationDetailScreen extends StatelessWidget {
                                 )),
                             TextSpan(
                                 text:
-                                'Fashion Designer at Victoria\'s Secret\n',
+                                'Flutter Developer at Fiverr\n',
                                 style: TextStyle(
                                   fontSize: ScreenUtil().setSp(16),
                                 )),
@@ -95,7 +98,7 @@ class RecommendationDetailScreen extends StatelessWidget {
                             children: <TextSpan>[
                               TextSpan(
                                 text:
-                                'Hey guys, This is Malena. I\'m here to find someone for hookup. I\'m not interested in something serious. \nI would love to hear your adventurous story',
+                                'Hey guys, I am Qalb E Abbas. I\'m a Flutter developer. I\'m interested in coding. \nI would love to work with you',
                                 style: TextStyle(
                                   fontSize: ScreenUtil().setSp(15),
                                 ),
@@ -136,7 +139,7 @@ class RecommendationDetailScreen extends StatelessWidget {
                               backgroundColor: Color(0xffffe9e6),
                             ),
                             InterestBox(
-                              text: 'Dance',
+                              text: 'Coding',
                               textColor: Color(0xff33c0ff),
                               backgroundColor: Color(0xffe5f7ff),
                             ),
